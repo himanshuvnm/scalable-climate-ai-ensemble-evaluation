@@ -40,7 +40,7 @@ configs/   Example configuration files
 docs/      Short method notes
 scripts/   Python scripts for covariance-response and weight diagnostics
 slurm/     Portable SLURM job templates
-figures/   Example figures, if provided
+figures/   Example figures
 ```
 
 ## Notes
