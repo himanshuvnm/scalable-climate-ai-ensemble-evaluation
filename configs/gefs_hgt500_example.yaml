@@ -1,0 +1,25 @@
+dataset:
+  name: atmospheric_ensemble_example
+  variable: HGT500
+  forecast_lead: f006
+  grid: latlon
+  description: Example configuration for localized covariance-response diagnostics.
+
+covariance:
+  ensemble_size: 31
+  method: matrix_free_action
+  response_type: observation_centered
+
+query:
+  query_index: 60
+  probe_id: 1
+
+weighting:
+  method: exponential_distance
+  ell_factor: 0.25
+  exclude_neighbor: 16
+  normalize_weights: true
+
+output:
+  save_bundle: true
+  save_figures: true
